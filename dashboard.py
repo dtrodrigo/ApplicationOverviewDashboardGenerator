@@ -13,6 +13,9 @@ Entity must not be larger than 100000 bytes - 48 Applications / dashboards subse
 """
 import requests, ssl, os, sys, json, copy
 
+# ENV examples (not needed, / at the end)
+#              Managed - https://myuniqueid.dynatrace-managed.com/e/my-environment-id
+#              SaaS    - https://myuniueid.live.dynatrace.com
 ENV = 'https://YOUR-DYNATRACE-CLUSTER-URL'
 TOKEN = 'YOUR-DYNATRACE-API-TOKEN'
 HEADERS = {'Authorization': 'Api-Token ' + TOKEN}
